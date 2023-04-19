@@ -1,3 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 body {
-  background-color: black;
+  background-color: whitesmoke;
+}
+.title_footer {
+  font-size: 1.5rem;
+  color: #fff;
+}
+hr {
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.footer {
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+img {
+  margin: 2rem;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid skyblue;
+}
+.row_footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.listas_footer {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.copybox_footer {
+  background-color: aliceblue;
+  padding: 1rem;
+}
+.copyRight_footer {
+  font-size: 18px;
+  text-align: center;
+}
+h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin: 2rem;
+}
+a {
+  color: skyblue;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+a:hover {
+  color: skyblue;
+}
+.social_footer {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 15px;
+}
+.social_footer ul {
+  display: flex;
+  border-radius: 10px;
+  background-color: #333;
+}
+.ph-linkedin-logo {
+  font-size: 20px;
+}
+.ph-github-logo {
+  font-size: 20px;
+}
+.ph-instagram-logo {
+  font-size: 20px;
 }
