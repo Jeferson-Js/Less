@@ -1,7 +1,8 @@
-@bg-main: #333;
+@bg-main: skyblue;
 @margin: 0;
 @padding: 0;
 @sizing: border-box;
+@links: #333;
 
 * {
   margin: @margin;
@@ -42,14 +43,24 @@ ul {
   align-items: center;
   gap: 2rem;
   list-style: none;
-  left: -60px;
-  transition: all 0.4s linear;
 }
 
 a {
   text-decoration: none;
   font-size: 17px;
-  color: #333;
+  color: @links;
+}
+
+.ph-house {
+  display: none;
+}
+
+.ph-users-three {
+  display: none;
+}
+
+.ph-phone {
+  display: none;
 }
 
 .ph-list {
@@ -59,11 +70,13 @@ a {
 }
 
 .active {
-  display: block;
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 // responsivo
-
 @media (min-width: 375px) and (max-width: 768px) {
   .ph-list {
     display: block;
@@ -71,12 +84,32 @@ a {
 
   ul {
     display: none;
-    height: calc(100% - 70px);
     position: absolute;
     top: 80px;
-    transform: translateX(70px);
+    left: 10px;
+    background-color: aliceblue;
+    border: 1px dashed @links;
+    border-radius: 15px;
+    margin: 7.3rem;
+    padding: 2rem;
+    flex-direction: column;
   }
-  a {
-    color: aliceblue;
+  .ph-users-three {
+    display: flex;
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
+    justify-content: center;
+  }
+  .ph-house {
+    display: flex;
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
+    justify-content: center;
+  }
+  .ph-phone {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin-bottom: 0.1rem;
   }
 }

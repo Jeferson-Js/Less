@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #333;
+  background-color: skyblue;
 }
 header {
   display: flex;
@@ -32,13 +32,20 @@ ul {
   align-items: center;
   gap: 2rem;
   list-style: none;
-  left: -60px;
-  transition: all 0.4s linear;
 }
 a {
   text-decoration: none;
   font-size: 17px;
   color: #333;
+}
+.ph-house {
+  display: none;
+}
+.ph-users-three {
+  display: none;
+}
+.ph-phone {
+  display: none;
 }
 .ph-list {
   font-size: 25px;
@@ -46,7 +53,10 @@ a {
   display: none;
 }
 .active {
-  display: block;
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 375px) and (max-width: 768px) {
   .ph-list {
@@ -54,12 +64,32 @@ a {
   }
   ul {
     display: none;
-    height: calc(100% - 70px);
     position: absolute;
     top: 80px;
-    transform: translateX(70px);
+    left: 10px;
+    background-color: aliceblue;
+    border: 1px dashed #333;
+    border-radius: 15px;
+    margin: 7.3rem;
+    padding: 2rem;
+    flex-direction: column;
   }
-  a {
-    color: aliceblue;
+  .ph-users-three {
+    display: flex;
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
+    justify-content: center;
+  }
+  .ph-house {
+    display: flex;
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
+    justify-content: center;
+  }
+  .ph-phone {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin-bottom: 0.1rem;
   }
 }
